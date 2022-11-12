@@ -1,0 +1,13 @@
+(() => {
+   function Person () {
+    this.year = 0;
+    
+    setInterval(function () {
+        this.year = this.year + 1;
+        console.log('Qual this?', this);
+    }, 1000)
+   }
+   
+   const p1 = new Person()
+})()
+ 
